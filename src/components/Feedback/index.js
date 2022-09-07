@@ -3,12 +3,12 @@ import './index.css'
 
 const FeedbackOption = props => {
   const {optionData, feedbackSelectionHandler} = props
-  const {id, name, imageUrl} = optionData
+  const {name, imageUrl} = optionData
 
   const onFeedbackSelection = () => feedbackSelectionHandler(name)
 
   return (
-    <li key={id} className="feedback-option" onClick={onFeedbackSelection}>
+    <li className="feedback-option" onClick={onFeedbackSelection}>
       <img className="feedback-option-img" src={imageUrl} alt={name} />
       <p className="feedback-option-rating">{name}</p>
     </li>
@@ -26,6 +26,7 @@ const CaptureFeedback = props => {
       <ul className="feedback-options-container">
         {emojiData.map(emojiDataItem => (
           <FeedbackOption
+            key={emojiDataItem.id}
             optionData={emojiDataItem}
             feedbackSelectionHandler={onUserFeedback}
           />
