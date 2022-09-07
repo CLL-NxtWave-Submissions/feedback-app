@@ -1,1 +1,78 @@
-/* Write your CSS code here. */
+.feedback-app-bg-container {
+  background-image: linear-gradient(to right, #ffebeb, #ffeeee, #ffc0bb);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  height: 100vh;
+  font-family: 'Roboto';
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+}
+
+.feedback-question {
+  font-size: 2rem;
+}
+
+.feedback-options-container {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.feedback-option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.feedback-option-img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.feedback-option-rating {
+  font-size: 0.8rem;
+  color: #1e293b;
+}
+
+.message-top-img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.message-text {
+  font-size: 1.5rem;
+}
+
+.feedback-purpose-description {
+  font-size: 1rem;
+}
+
+.feedback-option-rating,
+.feedback-purpose-description {
+  color: #1e293b;
+}
+
+.feedback-question,
+.message-text {
+  color: #0f172a;
+}
+
+.feedback-question,
+.message-text .feedback-option-rating,
+.feedback-purpose-description {
+  text-align: center;
+}
