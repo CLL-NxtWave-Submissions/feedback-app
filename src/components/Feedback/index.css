@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  padding: 2.5rem;
   height: 100vh;
   font-family: 'Roboto';
 }
@@ -14,13 +14,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 2.5rem;
   background-color: #ffffff;
   border-radius: 0.8rem;
 }
 
 .feedback-question {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .feedback-options-container {
@@ -29,6 +29,7 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  padding-left: 0;
 }
 
 .feedback-option {
@@ -40,13 +41,12 @@
 }
 
 .feedback-option-img {
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .feedback-option-rating {
-  font-size: 0.8rem;
-  color: #1e293b;
+  font-size: 1rem;
 }
 
 .message-top-img {
@@ -73,7 +73,31 @@
 }
 
 .feedback-question,
-.message-text .feedback-option-rating,
+.message-text,
+.feedback-option-rating,
 .feedback-purpose-description {
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .feedback-app-bg-container {
+    padding: 1.5rem;
+  }
+
+  .content-container {
+    padding: 2rem;
+  }
+
+  .feedback-question {
+    font-size: 2rem;
+  }
+
+  .feedback-option-img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .feedback-option-rating {
+    font-size: 0.8rem;
+  }
 }
