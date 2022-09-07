@@ -67,8 +67,6 @@ export default class Feedback extends Component {
     const {resources} = this.props
     const {emojis, loveEmojiUrl} = resources
 
-    console.log(`userRating: ${userRating}`)
-
     return (
       <div className="feedback-app-bg-container">
         {userFeedbackCaptured ? (
