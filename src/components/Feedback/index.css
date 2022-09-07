@@ -36,6 +36,7 @@
   flex-direction: column;
   margin-left: 1rem;
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 .feedback-option-img {
